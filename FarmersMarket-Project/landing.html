@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Farmers Market - Local & Organic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="landingstyles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#" id="navbar__logo">
+                <i class="fas fa-leaf"></i> FarmersMarket
+            </a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#home" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#about" class="navbar__links">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#services" class="navbar__links">Marketplace</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#contact" class="navbar__links">Contact</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="#signup.html" class="button" id="signup-btn">Join Our Community</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero__container">
+            <div class="hero__content">
+                <h1>Connecting You to the Land</h1>
+                <h2>Buy Direct from Farmers & Growers</h2>
+                <p>Welcome to Farmers Market — your online marketplace where Kenyan farmers and producers sell fresh produce and farming equipment directly to you.</p>
+                <button class="hero__btn">
+                    <a href="#about">Discover Our Story</a>
+                </button>
+            </div>
+            <div class="hero__image">
+                <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Fresh vegetables and produce at farmers market">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h1>What We Offer</h1>
+        <div class="services__container">
+            <div class="services__card">
+                <i class="fas fa-carrot"></i>
+                <h2>Fresh Produce</h2>
+                <p>Shop seasonal fruits, vegetables, herbs, and legumes grown by local Kenyan farmers. Our produce is picked fresh and delivered from the farm straight to your doorstep.</p>
+                <button onclick="showLearnMore('produce')">Learn More</button>
+            </div>
+            <div class="services__card">
+                <i class="fas fa-tractor"></i>
+                <h2>Farm Equipment</h2>
+                <p>Browse tools, machinery, and farming inputs available for sale by local producers and suppliers. Whether you're a smallholder or large-scale farmer, we've got you covered.</p>
+                <button onclick="showLearnMore('equipment')">Learn More</button>
+            </div>
+            <div class="services__card">
+                <i class="fas fa-hand-holding-heart"></i>
+                <h2>Direct Marketplace</h2>
+                <p>Our platform allows you to connect directly with farmers and small-scale producers. Fair prices, transparent sourcing, and real stories behind your food and tools.</p>
+                <button onclick="showLearnMore('marketplace')">Learn More</button>
+            </div>
+            <div class="services__card">
+                <i class="fas fa-calendar-alt"></i>
+                <h2>Events & Workshops</h2>
+                <p>Attend virtual events, join live Q&As with farmers, or participate in practical farming workshops. Learn, connect, and grow with our vibrant community.</p>
+                <button onclick="showLearnMore('events')">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about__container">
+            <div class="about__content">
+                <h2>Our Story</h2>
+                <p>Farmers Market was founded in 2015 to support Kenyan farmers by creating a digital space where they can sell directly to consumers. We remove middlemen, ensuring better prices for farmers and fresher goods for buyers.</p>
+                <p>We now support over 30 farming groups and equipment sellers across Kenya, offering everything from fresh tomatoes to irrigation pumps. Whether you're a chef, a parent, or a farmer yourself, there's something here for you.</p>
+                <p>We're building a fair, sustainable food system powered by technology, trust, and the incredible hard work of Kenya's growers and producers.</p>
+            </div>
+            <div class="about__image">
+                <img src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Farmers market stalls with fresh produce">
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats">
+        <div class="stats__container">
+            <div class="stat">
+                <h3>30+</h3>
+                <p>Farmer Groups & Vendors</p>
+            </div>
+            <div class="stat">
+                <h3>15,000+</h3>
+                <p>Monthly Visitors</p>
+            </div>
+            <div class="stat">
+                <h3>8</h3>
+                <p>Years Serving Kenya</p>
+            </div>
+            <div class="stat">
+                <h3>100%</h3>
+                <p>Locally-Sourced Goods</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="footer__container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3>Visit Us</h3>
+                    <p>123 Town Square<br>
+                    Nairobi, Kenya<br>
+                    Open Daily: 7AM - 9PM</p>
+                </div>
+                <div class="footer__section">
+                    <h3>Contact</h3>
+                    <p>Phone: 07333333<br>
+                    Email: info@farmersmarket.co.ke<br>
+                    <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+                </div>
+                <div class="footer__section">
+                    <h3>Get Involved</h3>
+                    <p><a href="#" onclick="showSignup()">Become a Vendor</a><br>
+                    <a href="#" onclick="showSignup()">Join Our Newsletter</a><br>
+                    <a href="#" onclick="showSignup()">Volunteer With Us</a></p>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 Farmers Market Kenya. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Signup Modal -->
+    <div id="signup-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Join Our Community</h2>
+            <p>Thank you for your interest in Farmers Market Kenya! We're excited to welcome you to our platform where farmers, sellers, and consumers meet.</p>
+            <p>Once signed up, our community team will help you with:</p>
+            <ul style="margin: 20px 0; padding-left: 20px;">
+                <li>Connecting with local buyers or sellers</li>
+                <li>Weekly product updates and vendor spotlights</li>
+                <li>Promoting your products or services</li>
+                <li>Tips on organic farming and tool maintenance</li>
+            </ul>
+            <p><strong>In a full website, this would redirect to a signup form with fields like name, contact info, and what you’re interested in (produce, equipment, volunteering, etc).</strong></p>
+        </div>
+    </div>
+
+
+    <!-- Learn More Modal -->
+    <div id="learn-more-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="learn-more-content">
+                <!-- Content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navMenu = document.querySelector('.navbar__menu');
+
+        mobileMenu.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Modal functionality
+        function showLearnMore(category) {
+            const modal = document.getElementById('learn-more-modal');
+            const content = document.getElementById('learn-more-content');
+            
+            const info = {
+                'produce': {
+                    title: 'Fresh Produce',
+                    content: `<h2>Farm-Fresh Produce</h2>
+                    <p>Our produce section features seasonal fruits and vegetables from over 20 local farms within a 50-mile radius. All our farmers follow sustainable growing practices, many are certified organic, and all are committed to providing the freshest, most flavorful produce possible.</p>
+                    <p><strong>What you'll find:</strong></p>
+                    <ul style="margin: 15px 0; padding-left: 20px;">
+                        <li>Seasonal fruits: apples, berries, stone fruits, citrus</li>
+                        <li>Fresh vegetables: leafy greens, root vegetables, squash, tomatoes</li>
+                        <li>Herbs and microgreens</li>
+                        <li>Specialty items like heirloom varieties</li>
+                    </ul>
+                    <p>Visit us early in the morning for the best selection, or check our website for weekly availability updates!</p>`
+                },
+                'artisan': {
+                    title: 'Artisan Foods',
+                    content: `<h2>Handcrafted Artisan Foods</h2>
+                    <p>Our artisan food vendors are skilled craftspeople who create exceptional products using traditional methods and local ingredients. From wood-fired breads to small-batch preserves, every item tells a story of passion and craftsmanship.</p>
+                    <p><strong>Featured products:</strong></p>
+                    <ul style="margin: 15px 0; padding-left: 20px;">
+                        <li>Freshly baked breads and pastries</li>
+                        <li>Artisanal cheeses from local dairies</li>
+                        <li>Small-batch jams, jellies, and preserves</li>
+                        <li>Handmade pasta and prepared foods</li>
+                        <li>Local honey and maple syrup</li>
+                    </ul>
+                    <p>Many of our artisans offer samples and love to share the story behind their products. Come taste the difference that passion makes!</p>`
+                },
+                'organic': {
+                    title: 'Organic Options',
+                    content: `<h2>Certified Organic Products</h2>
+                    <p>We're proud to offer a wide selection of certified organic produce and products. Our organic vendors undergo rigorous certification processes to ensure their products meet the highest standards for environmental sustainability and health.</p>
+                    <p><strong>Why choose organic:</strong></p>
+                    <ul style="margin: 15px 0; padding-left: 20px;">
+                        <li>No synthetic pesticides or fertilizers</li>
+                        <li>Non-GMO seeds and plants</li>
+                        <li>Sustainable farming practices that protect soil and water</li>
+                        <li>Higher nutritional content in many cases</li>
+                        <li>Support for biodiversity and ecosystem health</li>
+                    </ul>
+                    <p>Look for our green "Certified Organic" signs throughout the market, and don't hesitate to ask our vendors about their growing practices!</p>`
+                },
+                'events': {
+                    title: 'Community Events',
+                    content: `<h2>Community Events & Education</h2>
+                    <p>Fresh Valley Farmers Market is more than just a place to shop – it's a community gathering place where food education, culture, and connections flourish. Throughout the year, we host events that bring people together around shared values of sustainability, health, and local food.</p>
+                    <p><strong>Regular events include:</strong></p>
+                    <ul style="margin: 15px 0; padding-left: 20px;">
+                        <li>Monthly cooking demonstrations by local chefs</li>
+                        <li>Seasonal festivals (Spring Plant Sale, Summer Harvest Festival, Fall Pumpkin Patch)</li>
+                        <li>Farm tours and "Meet the Farmer" sessions</li>
+                        <li>Children's activities and educational programs</li>
+                        <li>Sustainability workshops and talks</li>
+                    </ul>
+                    <p>Check our events calendar on our website or follow us on social media for the latest updates on special events and seasonal celebrations!</p>`
+                }
+            };
+
+            content.innerHTML = info[category].content;
+            modal.style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('signup-modal').style.display = 'none';
+            document.getElementById('learn-more-modal').style.display = 'none';
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const signupModal = document.getElementById('signup-modal');
+            const learnMoreModal = document.getElementById('learn-more-modal');
+            if (event.target === signupModal) {
+                signupModal.style.display = 'none';
+            }
+            if (event.target === learnMoreModal) {
+                learnMoreModal.style.display = 'none';
+            }
+        }
+
+        // Setup signup button click
+        document.getElementById('signup-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            showSignup();
+        });
+    </script>
+</body>
+</html>
